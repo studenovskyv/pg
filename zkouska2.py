@@ -21,7 +21,7 @@ def convert_to_czk(amount, currency):
     if not response.ok:
         raise Exception("Chyba při stahování kurzovního lístku.")
     
-    data = response.text.split("\n")  # Rozdělení obsahu na řádky
+    data = response.text.split("\n")  
     exchange_rates = {}
 
     
