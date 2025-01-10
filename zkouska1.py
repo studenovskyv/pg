@@ -9,15 +9,15 @@ def process_strings(strings):
 
 
 
-    result = []  # Vytvoříme prázdný seznam pro ukládání výsledků.
+    result = []  
     
-    for string in strings:  # Procházíme každý řetězec v seznamu.
-        if string == "STOP":  # Pokud narazíme na řetězec "STOP":
-            break  # Ukončíme smyčku.
-        if len(string) > 3:  # Pokud délka řetězce je větší než 3 znaky:
-            result.append(string.upper())  # Převedeme na velká písmena a přidáme do výsledku.
+    for string in strings:  
+        if string == "STOP":  
+            break  
+        if len(string) > 3:  
+            result.append(string.upper())  
     
-    return result  # Vrátíme výsledný seznam.
+    return result  
     
 
 
