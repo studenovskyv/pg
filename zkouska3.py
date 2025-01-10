@@ -7,54 +7,33 @@
 
 
 
-import math  # Import knihovny pro práci s matematickými funkcemi
+import math 
 
 class Shape:
-    """
-    Třída Shape reprezentuje obecný geometrický tvar.
-    Obsahuje základní metodu `area`, která vrací 0.0.
-    """
+   
     def area(self):
-        """
-        Vrátí plochu geometrického tvaru.
-        (V této základní třídě vrací 0.0, protože konkrétní výpočet
-        závisí na podtřídách.)
-        """
+        
         return 0.0
 
-# Vytvoření podtřídy `Rectangle`
 class Rectangle(Shape):
-    """
-    Třída Rectangle reprezentuje obdélník.
-    """
+   
     def __init__(self, width, height):
-        """
-        Inicializuje obdélník s šířkou `width` a výškou `height`.
-        """
+        
         self.width = width
         self.height = height
 
     def area(self):
-        """
-        Vypočítá plochu obdélníku jako šířka * výška.
-        """
+        
         return self.width * self.height
 
-# Vytvoření podtřídy `Circle`
 class Circle(Shape):
-    """
-    Třída Circle reprezentuje kruh.
-    """
+    
     def __init__(self, radius):
-        """
-        Inicializuje kruh s poloměrem `radius`.
-        """
+        
         self.radius = radius
 
     def area(self):
-        """
-        Vypočítá plochu kruhu jako π * r^2.
-        """
+        
         return math.pi * (self.radius ** 2)
 
 
