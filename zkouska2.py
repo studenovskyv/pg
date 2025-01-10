@@ -38,7 +38,7 @@ def convert_to_czk(amount, currency):
         code = parts[3]  
         amount_per_unit = float(parts[2]) 
         exchange_rate = float(parts[4].replace(",", "."))  
-
+        # Uložení do slovníku s klíčem `code`
         exchange_rates[code] = exchange_rate / amount_per_unit
 
     if currency not in exchange_rates:
